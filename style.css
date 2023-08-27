@@ -13,6 +13,7 @@ a{
 img{
     cursor: pointer;
 }
+
 .flex-div{
     display: flex;
     align-items: center;
@@ -23,25 +24,90 @@ nav{
     justify-content: space-between;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
     background: #fff;
-    position: static;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
+
 .nav-right img{
     width: 60px;
     margin-right: 25px;
-
+}
+.nav-right .use-up{
+    width: 80px;
+}
+.nav-right .use-noti{
+    width: 80px;
 }
 .nav-right .user-icon{
-    width: 35px;
+    width: 45px;
     margin-right: 0;
 }
 
 .nav-left .menu-icon{
-    width: 45px;
+    width: 50px;
     margin-top: 10px;
 }
-
 .nav-left .logo{
-    width: 130px;
+    width: 250px;
+}
+
+.nav-middle .mic-icon{
+    width: 70px;
+}
+.nav-middle .search-box{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.nav-middle .search-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.nav-middle .search-box img{
+    width: 15px;
+}
+<!---------------------------------------------------------------------------------->
+
+.sidebar{
+    background: #fff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+    
+}
+.shortcut-links a img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+shortcut-links a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+shortcut-links a:first-child{
+    color: #ed3833;
+}
+
+
+
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+}
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
 }
