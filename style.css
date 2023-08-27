@@ -111,3 +111,9 @@ shortcut-links a:first-child{
     margin: 20px 0;
     color: #5a5a5a;
 }
+
+
+
+.small-sidebar{
+    width: 5%;
+}
