@@ -30,30 +30,26 @@ nav{
 }
 
 .nav-right img{
-    width: 60px;
+    width: 25px;
     margin-right: 25px;
 }
-.nav-right .use-up{
-    width: 80px;
-}
-.nav-right .use-noti{
-    width: 80px;
-}
+
 .nav-right .user-icon{
-    width: 45px;
+    width: 35px;
+    border-radius: 50%;
     margin-right: 0;
 }
 
 .nav-left .menu-icon{
-    width: 50px;
-    margin-top: 10px;
+    width: 22px;
+    margin-right: 25px;
 }
 .nav-left .logo{
-    width: 250px;
+    width: 130px;
 }
 
 .nav-middle .mic-icon{
-    width: 70px;
+    width: 16px;
 }
 .nav-middle .search-box{
     border: 1px solid #ccc;
@@ -83,7 +79,7 @@ nav{
     
 }
 .shortcut-links a img{
-    width: 50px;
+    width: 20px;
     margin-right: 20px;
 }
 
@@ -98,13 +94,11 @@ shortcut-links a:first-child{
     color: #ed3833;
 }
 
-
-
 .sidebar hr{
     border: 0;
     height: 1px;
     background: #ccc;
-    width: 85%;
+    width: 20%;
 }
 .subscribed-list h3{
     font-size: 13px;
@@ -112,8 +106,32 @@ shortcut-links a:first-child{
     color: #5a5a5a;
 }
 
+.subscribed-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
 
+.subscribed-list a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
 
 .small-sidebar{
     width: 5%;
+}
+.small-sidebar a p{
+    display: none;
+}
+
+.small-sidebar h3{
+    display: none;
+}
+
+.small-sidebar hr{
+    width: 50%;
+    margin-bottom: 25px;
 }
