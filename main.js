@@ -3,5 +3,5 @@ var sidebar = document.querySelectorAll(".sidebar");
 
 menuIcon.onclik =function(){
     sidebar.classList.toggle("small-sidebar");
-    
+
 }
