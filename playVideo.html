@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play Video</title>
     <link rel="stylesheet" href="style.css">
-
-    
 </head>
 <body>
     <nav class="flex-div">
@@ -33,9 +31,9 @@
 <div class="container play-container">
     <div class="row">
         <div class="playVideo">
-            <video controls autoplay>
-                <source src="images/video.mp4" type="video/mp4">
-            </video>
+            <div id="videoo">
+                <iframe width="800" height="485" src="https://www.youtube.com/embed/izvodnnCvt0?si=Gc8g076QiCtRBeYT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
             <div class="tags">
                 <a href="">#Coding</a>   <a href="">#HTML</a>    <a href="">#CSS</a>
                 <a href="">#JavaScript</a>
@@ -64,7 +62,6 @@
                 <p>Subscribe Easy Tutorials to whatch more tutorials on web Development </p>
                 <hr>
                 <h4>134 Comments</h4>
-
                 <div class="add-comment">
                     <img src="images/Jack.png">
                     <input type="text" placeholder="Write comments...">
@@ -75,19 +72,17 @@
                         <h3>Jack Nicholson <span>2 days ago</span></h3>
                         <p>A globla computer network providing a variety of information and comunication facilities,
                             cosisting of interconnected networks using standardized communication protocols</p>
+                        <div class="acomment-action">
+                            <img src="images/like.png" alt="">
+                            <span>244</span>
+                            <img src="images/dislike.png">
+                            <span>2</span>
+                            <span>REPLY</span>
+                            <a href="">ALL Replies</a>
+                        </div>
                     </div>
                 </div>
-
-
             </div>
-
-
-
-
-
-
-
-
         </div>
         <div class="right-sidebar">
             <div class="sideVideoList">
@@ -99,8 +94,6 @@
                 </div>
             </div>
             <div class="right-sidebar">
-
-            
                 <div class="sideVideoList">
                     <a href="" class="smallThumbnail"><img src="images/thumbnail2.png"></a>
                     <div class="vidInfo">
@@ -110,8 +103,6 @@
                     </div>
                 </div>
                 <div class="right-sidebar">
-
-            
                     <div class="sideVideoList">
                         <a href="" class="smallThumbnail"><img src="images/thumbnail3.png"></a>
                         <div class="vidInfo">
@@ -121,8 +112,6 @@
                         </div>
                     </div>
                     <div class="right-sidebar">
-
-            
                         <div class="sideVideoList">
                             <a href="" class="smallThumbnail"><img src="images/thumbnail4.png"></a>
                             <div class="vidInfo">
@@ -132,8 +121,6 @@
                             </div>
                         </div>
                         <div class="right-sidebar">
-
-            
                             <div class="sideVideoList">
                                 <a href="" class="smallThumbnail"><img src="images/thumbnail5.png"></a>
                                 <div class="vidInfo">
@@ -143,8 +130,6 @@
                                 </div>
                             </div>
                             <div class="right-sidebar">
-
-            
                                 <div class="sideVideoList">
                                     <a href="" class="smallThumbnail"><img src="images/thumbnail6.png"></a>
                                     <div class="vidInfo">
@@ -154,8 +139,6 @@
                                     </div>
                                 </div>
                                 <div class="right-sidebar">
-
-            
                                     <div class="sideVideoList">
                                         <a href="" class="smallThumbnail"><img src="images/thumbnail7.png"></a>
                                         <div class="vidInfo">
@@ -186,13 +169,12 @@
                                                     <p>15k views</p>
                                                 </div>
                                             </div>
-
-        </div>
-    </div>
+                                        </div>
+                                    </div>
 </div>
 </div>
 </div>
 
-
+<script type="module" src="videos.js"></script>
 </body>
 </html> 

@@ -5,15 +5,14 @@ export const peticionApi = async()=>{
     console.log(listContainer);
     console.log(peticionJson.contents);
     peticionJson.contents.map((informacion, id)=>{
-        console.log(informacion)
-        console.log(informacion.video)
-        console.log(informacion.video.title)
-        console.log(informacion.video.videoId)
-        console.log(informacion.video.publishedTimeText)
+    
+        
  /*        console.log(id) */
         listContainer.insertAdjacentHTML('beforeend', /* html */ `
         <div class="vid-list">
-                <a href="playVideo.html"> <img src="images/thumbnail1.png" class="thumbnail"></a>
+                <a href="playVideo.html" id="${informacion.video.videoId}" class="id"> 
+                    <img src="${informacion.video.thumbnails[3].url} " class="thumbnail">
+                </a>
                 <div class="flex-div">
                     <img src="images/Jack.png">
                     <div class="vid-info">
@@ -26,6 +25,20 @@ export const peticionApi = async()=>{
         
         `)
 
-    
+
     })
+    
+} 
+
+export const baner = async()=>{
+    let peticion = await fetch("infoCanal.json");
+    let peticionJson = await peticion.json();
+    let baner = peticionJson.banner
+    let listContainer = document.querySelector('.banner')
+    console.log(baner.tv[4].url);
+
+    listContainer.innerHTML = `
+    <img src="${baner.tv[4].url}" alt="">
+    `
+    
 } 
