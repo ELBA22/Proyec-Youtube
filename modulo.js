@@ -28,7 +28,7 @@ export const peticionApi = async()=>{
                     <img src="${informacion.video.thumbnails[3].url} " class="thumbnail">
                 </a>
                 <div class="flex-div">
-                    <img src="Images/Jack.png">
+                    <img src="images/Jack.png">
                     <div class="vid-info">
                         <a href="playVideo.html">${informacion.video.title}</a>
                         <p>Esay tutorials</p>
